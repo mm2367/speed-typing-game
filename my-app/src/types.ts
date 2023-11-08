@@ -1,0 +1,1 @@
+export type difficulty='easy'|'medium'| 'hard'|'veteran';

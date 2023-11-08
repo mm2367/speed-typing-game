@@ -1,0 +1,93 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.difficulty-button-row-wrapper{
+  height: 50vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(lg) {
+      display: block;
+      left: 30%;
+      top: 15%;
+    }
+}
+
+.difficulty-button{
+  padding: 40px;
+  border-radius: 50%;
+  border: solid 1px black;
+  background: green;
+  max-width: 110px;
+  display: flex;
+  font-family: 'Orbitron';
+  justify-content: center;
+  align-items: center;
+  margin:0 20px;
+  @include media-breakpoint-down(lg) {
+    margin: 40px 20px 0 10px;
+  }
+
+}
+#easy{
+  background-color: #03AC13;
+  color:white;
+  &:hover{
+    color:#03AC13;
+    background-color:white;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+}
+  #medium{
+    background-color: #FCD567;
+    color:white;
+    &:hover{
+      color: #FCD567;;
+      background-color:white;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+}
+#hard{
+  background-color: #F08494;
+  color:white;
+  &:hover{
+    color:#F08494;
+    background-color:white;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+}
+#veteran{
+  background-color: #990f02;
+  color:white;
+  &:hover{
+    color:#990f02;
+    background-color:white;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+}
+.header-font{
+  font-size: 2rem;
+  font-family: 'Orbitron';
+  margin-top:40px
+}
+
+.reset-button{
+  border-radius: 25%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  border: 0;
+}
+
+.text-input{
+  margin-top:30px;
+  padding:8px;
+  min-width:350px;
+  border-radius: 5px;
+}
